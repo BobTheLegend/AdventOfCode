@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-parsedNums = []
+sums = []
 
 with open('C:\\Users\\jss10\\Downloads\\AdventOfCodeD1_1.txt','r',encoding="utf-8") as f:
     l = f.readlines()
@@ -10,7 +10,7 @@ with open('C:\\Users\\jss10\\Downloads\\AdventOfCodeD1_1.txt','r',encoding="utf-
         if line.strip():
             temp.append(int(line))
         else:
-            parsedNums.append(temp)
+            sums.append(sum(temp))
             temp = []
 
     
