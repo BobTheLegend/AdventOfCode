@@ -13,4 +13,9 @@ with open('C:\\Users\\jss10\\Downloads\\AdventOfCodeD1_1.txt','r',encoding="utf-
             sums.append(sum(temp))
             temp = []
 
+x = 0
+for i in range(0,3):
+    x += max(sums)
+    sums.remove(max(sums))
+print(x)
     
